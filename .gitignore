@@ -32,15 +32,31 @@
 
 # Ignore public uploads
 public/uploads
-# Elastic Beanstalk Files
-.elasticbeanstalk/*
-!.elasticbeanstalk/*.cfg.yml
-!.elasticbeanstalk/*.global.yml
-.rbenv-vars
-.rspec-failures
-decidim_dummy_app
-.vscode
 
-config/deploy*
+
+.rspec-failures
+.rbenv-vars
+
+coverage
+decidim-peertube/coverage
+
+decidim-peertube/spec/decidim_dummy_app
+spec/decidim_dummy_app
+
+config/deploy
+config/deploy.rb
 config/application.yml
 Capfile
+
+.stuff
+
+.rubocop*
+
+node_modules
+/public/decidim-packs
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
