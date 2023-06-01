@@ -337,206 +337,76 @@
   <component name="RailsGeneratorsCache">
     <option name="generators">
       <list>
-        <option value="active_record:application_record" />
-        <option value="active_record:devise" />
-        <option value="active_record:devise_invitable" />
-        <option value="application_record" />
-        <option value="assets" />
-        <option value="capistrano:sidekiq:monit:template" />
-        <option value="cell" />
-        <option value="channel" />
-        <option value="coffee:assets" />
-        <option value="concept" />
+        <option value="active_record:migration" />
+        <option value="active_record:model" />
+        <option value="active_record:observer" />
+        <option value="active_record:session_migration" />
         <option value="controller" />
-        <option value="devise" />
-        <option value="devise:controllers" />
-        <option value="devise:i18n:locale" />
-        <option value="devise:i18n:views" />
-        <option value="devise:install" />
-        <option value="devise:views" />
-        <option value="devise_invitable" />
-        <option value="devise_invitable:form_for" />
-        <option value="devise_invitable:install" />
-        <option value="devise_invitable:invitation_views" />
-        <option value="devise_invitable:simple_form_for" />
-        <option value="devise_invitable:views" />
-        <option value="doorkeeper:application_owner" />
-        <option value="doorkeeper:confidential_applications" />
-        <option value="doorkeeper:enable_polymorphic_resource_owner" />
-        <option value="doorkeeper:install" />
-        <option value="doorkeeper:migration" />
-        <option value="doorkeeper:pkce" />
-        <option value="doorkeeper:previous_refresh_token" />
-        <option value="doorkeeper:views" />
-        <option value="factory_bot:model" />
+        <option value="erb:controller" />
+        <option value="erb:mailer" />
+        <option value="erb:scaffold" />
         <option value="generator" />
-        <option value="geocoder:config" />
-        <option value="geocoder:maxmind:geolite_city" />
-        <option value="geocoder:maxmind:geolite_country" />
-        <option value="graphql:enum" />
-        <option value="graphql:input" />
-        <option value="graphql:install" />
-        <option value="graphql:install:mutation_root" />
-        <option value="graphql:interface" />
-        <option value="graphql:loader" />
-        <option value="graphql:mutation" />
-        <option value="graphql:mutation_create" />
-        <option value="graphql:mutation_delete" />
-        <option value="graphql:mutation_update" />
-        <option value="graphql:object" />
-        <option value="graphql:relay" />
-        <option value="graphql:scalar" />
-        <option value="graphql:union" />
         <option value="helper" />
         <option value="integration_test" />
-        <option value="job" />
-        <option value="kaminari:config" />
-        <option value="kaminari:views" />
-        <option value="mailbox" />
         <option value="mailer" />
+        <option value="metal" />
         <option value="migration" />
         <option value="model" />
-        <option value="mongoid:devise" />
-        <option value="mongoid:devise_invitable" />
-        <option value="paper_trail:install" />
-        <option value="paper_trail:migration" />
-        <option value="paper_trail:update_item_subtype" />
+        <option value="model_subclass" />
+        <option value="observer" />
+        <option value="performance_test" />
+        <option value="plugin" />
         <option value="resource" />
-        <option value="responders:install" />
-        <option value="responders_controller" />
-        <option value="rspec:cell" />
-        <option value="rspec:channel" />
-        <option value="rspec:controller" />
-        <option value="rspec:feature" />
-        <option value="rspec:generator" />
-        <option value="rspec:helper" />
-        <option value="rspec:install" />
-        <option value="rspec:integration" />
-        <option value="rspec:job" />
-        <option value="rspec:mailbox" />
-        <option value="rspec:mailer" />
-        <option value="rspec:model" />
-        <option value="rspec:request" />
-        <option value="rspec:scaffold" />
-        <option value="rspec:system" />
-        <option value="rspec:view" />
         <option value="scaffold" />
         <option value="scaffold_controller" />
-        <option value="sidekiq:job" />
-        <option value="social_share_button:install" />
-        <option value="system_test" />
-        <option value="task" />
-        <option value="test_unit:cell" />
-        <option value="test_unit:channel" />
-        <option value="test_unit:concept" />
-        <option value="test_unit:generator" />
-        <option value="test_unit:mailbox" />
+        <option value="session_migration" />
+        <option value="stylesheets" />
+        <option value="test_unit:controller" />
+        <option value="test_unit:helper" />
+        <option value="test_unit:integration" />
+        <option value="test_unit:mailer" />
+        <option value="test_unit:model" />
+        <option value="test_unit:observer" />
+        <option value="test_unit:performance" />
         <option value="test_unit:plugin" />
-        <option value="uploader" />
-        <option value="w3c_rspec_validators:config" />
-        <option value="wicked_pdf" />
+        <option value="test_unit:scaffold" />
       </list>
     </option>
     <option name="myGenerators">
       <list>
-        <option value="active_record:application_record" />
-        <option value="active_record:devise" />
-        <option value="active_record:devise_invitable" />
-        <option value="application_record" />
-        <option value="assets" />
-        <option value="capistrano:sidekiq:monit:template" />
-        <option value="cell" />
-        <option value="channel" />
-        <option value="coffee:assets" />
-        <option value="concept" />
+        <option value="active_record:migration" />
+        <option value="active_record:model" />
+        <option value="active_record:observer" />
+        <option value="active_record:session_migration" />
         <option value="controller" />
-        <option value="devise" />
-        <option value="devise:controllers" />
-        <option value="devise:i18n:locale" />
-        <option value="devise:i18n:views" />
-        <option value="devise:install" />
-        <option value="devise:views" />
-        <option value="devise_invitable" />
-        <option value="devise_invitable:form_for" />
-        <option value="devise_invitable:install" />
-        <option value="devise_invitable:invitation_views" />
-        <option value="devise_invitable:simple_form_for" />
-        <option value="devise_invitable:views" />
-        <option value="doorkeeper:application_owner" />
-        <option value="doorkeeper:confidential_applications" />
-        <option value="doorkeeper:enable_polymorphic_resource_owner" />
-        <option value="doorkeeper:install" />
-        <option value="doorkeeper:migration" />
-        <option value="doorkeeper:pkce" />
-        <option value="doorkeeper:previous_refresh_token" />
-        <option value="doorkeeper:views" />
-        <option value="factory_bot:model" />
+        <option value="erb:controller" />
+        <option value="erb:mailer" />
+        <option value="erb:scaffold" />
         <option value="generator" />
-        <option value="geocoder:config" />
-        <option value="geocoder:maxmind:geolite_city" />
-        <option value="geocoder:maxmind:geolite_country" />
-        <option value="graphql:enum" />
-        <option value="graphql:input" />
-        <option value="graphql:install" />
-        <option value="graphql:install:mutation_root" />
-        <option value="graphql:interface" />
-        <option value="graphql:loader" />
-        <option value="graphql:mutation" />
-        <option value="graphql:mutation_create" />
-        <option value="graphql:mutation_delete" />
-        <option value="graphql:mutation_update" />
-        <option value="graphql:object" />
-        <option value="graphql:relay" />
-        <option value="graphql:scalar" />
-        <option value="graphql:union" />
         <option value="helper" />
         <option value="integration_test" />
-        <option value="job" />
-        <option value="kaminari:config" />
-        <option value="kaminari:views" />
-        <option value="mailbox" />
         <option value="mailer" />
+        <option value="metal" />
         <option value="migration" />
         <option value="model" />
-        <option value="mongoid:devise" />
-        <option value="mongoid:devise_invitable" />
-        <option value="paper_trail:install" />
-        <option value="paper_trail:migration" />
-        <option value="paper_trail:update_item_subtype" />
+        <option value="model_subclass" />
+        <option value="observer" />
+        <option value="performance_test" />
+        <option value="plugin" />
         <option value="resource" />
-        <option value="responders:install" />
-        <option value="responders_controller" />
-        <option value="rspec:cell" />
-        <option value="rspec:channel" />
-        <option value="rspec:controller" />
-        <option value="rspec:feature" />
-        <option value="rspec:generator" />
-        <option value="rspec:helper" />
-        <option value="rspec:install" />
-        <option value="rspec:integration" />
-        <option value="rspec:job" />
-        <option value="rspec:mailbox" />
-        <option value="rspec:mailer" />
-        <option value="rspec:model" />
-        <option value="rspec:request" />
-        <option value="rspec:scaffold" />
-        <option value="rspec:system" />
-        <option value="rspec:view" />
         <option value="scaffold" />
         <option value="scaffold_controller" />
-        <option value="sidekiq:job" />
-        <option value="social_share_button:install" />
-        <option value="system_test" />
-        <option value="task" />
-        <option value="test_unit:cell" />
-        <option value="test_unit:channel" />
-        <option value="test_unit:concept" />
-        <option value="test_unit:generator" />
-        <option value="test_unit:mailbox" />
+        <option value="session_migration" />
+        <option value="stylesheets" />
+        <option value="test_unit:controller" />
+        <option value="test_unit:helper" />
+        <option value="test_unit:integration" />
+        <option value="test_unit:mailer" />
+        <option value="test_unit:model" />
+        <option value="test_unit:observer" />
+        <option value="test_unit:performance" />
         <option value="test_unit:plugin" />
-        <option value="uploader" />
-        <option value="w3c_rspec_validators:config" />
-        <option value="wicked_pdf" />
+        <option value="test_unit:scaffold" />
       </list>
     </option>
   </component>
@@ -545,38 +415,6 @@
       <RakeTaskImpl id="rake">
         <subtasks>
           <RakeTaskImpl description="List versions of all Rails frameworks and the environment" fullCommand="about" id="about" />
-          <RakeTaskImpl id="action_mailbox">
-            <subtasks>
-              <RakeTaskImpl id="ingress">
-                <subtasks>
-                  <RakeTaskImpl description="Relay an inbound email from Exim to Action Mailbox (URL and INGRESS_PASSWORD required)" fullCommand="action_mailbox:ingress:exim" id="exim" />
-                  <RakeTaskImpl description="Relay an inbound email from Postfix to Action Mailbox (URL and INGRESS_PASSWORD required)" fullCommand="action_mailbox:ingress:postfix" id="postfix" />
-                  <RakeTaskImpl description="Relay an inbound email from Qmail to Action Mailbox (URL and INGRESS_PASSWORD required)" fullCommand="action_mailbox:ingress:qmail" id="qmail" />
-                  <RakeTaskImpl description="" fullCommand="action_mailbox:ingress:environment" id="environment" />
-                </subtasks>
-              </RakeTaskImpl>
-              <RakeTaskImpl description="Copy over the migration" fullCommand="action_mailbox:install" id="install" />
-              <RakeTaskImpl description="" fullCommand="action_mailbox:copy_migrations" id="copy_migrations" />
-              <RakeTaskImpl id="install">
-                <subtasks>
-                  <RakeTaskImpl description="" fullCommand="action_mailbox:install:migrations" id="migrations" />
-                </subtasks>
-              </RakeTaskImpl>
-              <RakeTaskImpl description="" fullCommand="action_mailbox:run_installer" id="run_installer" />
-            </subtasks>
-          </RakeTaskImpl>
-          <RakeTaskImpl id="action_text">
-            <subtasks>
-              <RakeTaskImpl description="Copy over the migration, stylesheet, and JavaScript files" fullCommand="action_text:install" id="install" />
-              <RakeTaskImpl description="" fullCommand="action_text:copy_migrations" id="copy_migrations" />
-              <RakeTaskImpl id="install">
-                <subtasks>
-                  <RakeTaskImpl description="" fullCommand="action_text:install:migrations" id="migrations" />
-                </subtasks>
-              </RakeTaskImpl>
-              <RakeTaskImpl description="" fullCommand="action_text:run_installer" id="run_installer" />
-            </subtasks>
-          </RakeTaskImpl>
           <RakeTaskImpl id="active_storage">
             <subtasks>
               <RakeTaskImpl description="Copy over the migration needed to the application" fullCommand="active_storage:install" id="install" />
@@ -605,15 +443,6 @@
                   <RakeTaskImpl description="" fullCommand="app:update:upgrade_guide_info" id="upgrade_guide_info" />
                 </subtasks>
               </RakeTaskImpl>
-            </subtasks>
-          </RakeTaskImpl>
-          <RakeTaskImpl id="assets">
-            <subtasks>
-              <RakeTaskImpl description="Remove old compiled assets" fullCommand="assets:clean[keep]" id="clean[keep]" />
-              <RakeTaskImpl description="Remove compiled assets" fullCommand="assets:clobber" id="clobber" />
-              <RakeTaskImpl description="Load asset compile environment" fullCommand="assets:environment" id="environment" />
-              <RakeTaskImpl description="Compile all the assets named in config.assets.precompile" fullCommand="assets:precompile" id="precompile" />
-              <RakeTaskImpl description="" fullCommand="assets:clean" id="clean" />
             </subtasks>
           </RakeTaskImpl>
           <RakeTaskImpl id="cache_digests">
@@ -1016,25 +845,9 @@
           <RakeTaskImpl description="Restart app by touching tmp/restart.txt" fullCommand="restart" id="restart" />
           <RakeTaskImpl description="Generate a cryptographically secure secret key (this is typically used to generate a secret for cookie sessions)" fullCommand="secret" id="secret" />
           <RakeTaskImpl description="Report code statistics (KLOCs, etc) from the application or engine" fullCommand="stats" id="stats" />
-          <RakeTaskImpl description="Runs all tests in test folder except system ones" fullCommand="test" id="test" />
           <RakeTaskImpl id="test">
             <subtasks>
               <RakeTaskImpl description="Run tests for cells" fullCommand="test:cells" id="cells" />
-              <RakeTaskImpl description="Run tests quickly, but also reset db" fullCommand="test:db" id="db" />
-              <RakeTaskImpl description="Run system tests only" fullCommand="test:system" id="system" />
-              <RakeTaskImpl description="" fullCommand="test:channels" id="channels" />
-              <RakeTaskImpl description="" fullCommand="test:controllers" id="controllers" />
-              <RakeTaskImpl description="" fullCommand="test:functionals" id="functionals" />
-              <RakeTaskImpl description="" fullCommand="test:generators" id="generators" />
-              <RakeTaskImpl description="" fullCommand="test:helpers" id="helpers" />
-              <RakeTaskImpl description="" fullCommand="test:integration" id="integration" />
-              <RakeTaskImpl description="" fullCommand="test:jobs" id="jobs" />
-              <RakeTaskImpl description="" fullCommand="test:mailboxes" id="mailboxes" />
-              <RakeTaskImpl description="" fullCommand="test:mailers" id="mailers" />
-              <RakeTaskImpl description="" fullCommand="test:models" id="models" />
-              <RakeTaskImpl description="" fullCommand="test:prepare" id="prepare" />
-              <RakeTaskImpl description="" fullCommand="test:run" id="run" />
-              <RakeTaskImpl description="" fullCommand="test:units" id="units" />
             </subtasks>
           </RakeTaskImpl>
           <RakeTaskImpl id="time">
@@ -1104,7 +917,12 @@
               <RakeTaskImpl description="Checks project structure for Zeitwerk compatibility" fullCommand="zeitwerk:check" id="check" />
             </subtasks>
           </RakeTaskImpl>
-          <RakeTaskImpl description="" fullCommand="default" id="default" />
+          <RakeTaskImpl id="assets">
+            <subtasks>
+              <RakeTaskImpl description="" fullCommand="assets:clean" id="clean" />
+              <RakeTaskImpl description="" fullCommand="assets:precompile" id="precompile" />
+            </subtasks>
+          </RakeTaskImpl>
           <RakeTaskImpl id="dev">
             <subtasks>
               <RakeTaskImpl description="" fullCommand="dev:cache" id="cache" />

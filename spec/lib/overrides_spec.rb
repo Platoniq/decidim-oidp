@@ -10,42 +10,8 @@ checksums = [
     package: "decidim-core",
     files: {
       # layouts
-      "/app/views/layouts/decidim/_logo.html.erb" => "2713715db652c8107f1fe5f2c4d618b6",
-      "/app/views/layouts/decidim/_mailer_logo.html.erb" => "8abb593b786423070101ded4ea8140b4",
-      "/app/views/layouts/decidim/_mini_footer.html.erb" => "55a9ca723b65b8d9eadb714818a89bb3",
-      "/app/views/layouts/decidim/mailer.html.erb" => "5bbe335c1dfd02f8448af287328a49dc",
-      "/app/assets/javascripts/decidim/floating_help.js.es6" => "b25ba694db0fd880442b4310d9ece55c",
-      # classes
-      "/app/commands/decidim/invite_user.rb" => "30b3d50ffe162180f2a0ba30a76db745",
-      "/app/commands/decidim/invite_user_again.rb" => "19f2655763d77ba0804ceef7fc97adfa"
-    }
-  }, {
-    package: "decidim-admin",
-    files: {
-      # classes
-      "/app/controllers/decidim/admin/concerns/has_private_users.rb" => "c40d4da1b9b4fa389fdb60a0d0e2e8f7",
-      "/app/commands/decidim/admin/create_participatory_space_private_user.rb" => "b380a8e10e9f54aff7e2669f128b261a"
-    }
-  }, {
-    package: "decidim-assemblies",
-    files: {
-      # classes
-      "/app/controllers/decidim/assemblies/admin/participatory_space_private_users_controller.rb" => "af5800660a90e5391414254b73f475d8"
-    }
-  }, {
-    package: "decidim-conferences",
-    files: {
-      # views
-      "/app/views/decidim/conferences/conference_program/show.html.erb" => "e4d32ccc41adea7d9689b9021ef83694",
-      "/app/views/decidim/conferences/conferences/show.html.erb" => "746ca5f3192ba14095431691b766430a"
-    }
-  }, {
-    package: "decidim-debates",
-    files: {
-      # views
-      "/app/views/decidim/debates/debates/index.html.erb" => "13384916788b649eccf576714d2f12ef",
-      "/app/presenters/decidim/debates/official_author_presenter.rb" => "f47ad586da31ff30ad853e170c3b773f"
-      # classes
+      "/app/views/layouts/decidim/mailer.html.erb" => "0c7804de08649c8d3c55c117005e51c9",
+      "/app/packs/src/decidim/floating_help.js" => "b25ba694db0fd880442b4310d9ece55c"
     }
   }
 ]
