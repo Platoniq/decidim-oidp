@@ -53,6 +53,7 @@ group :development do
 end
 
 group :production do
+  gem "aws-sdk-s3", require: false
   gem "figaro", "~> 1.2"
-  gem "fog-aws"
+  gem "fog-aws" # to remove once image migration is complete
 end
