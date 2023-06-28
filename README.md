@@ -1,10 +1,10 @@
-# UCLG
+# OIDP
 
-![Build](https://github.com/Platoniq/decidim-uclg/workflows/Build/badge.svg)
+![Build](https://github.com/Platoniq/decidim-oidp/workflows/Build/badge.svg)
 
 Free Open-Source participatory democracy, citizen participation and open government for cities and organizations
 
-This is the open-source repository for UCLG, based on [Decidim](https://github.com/decidim/decidim).
+This is the open-source repository for OIDP, based on [Decidim](https://github.com/decidim/decidim).
 
 ## Setting up the application
 
