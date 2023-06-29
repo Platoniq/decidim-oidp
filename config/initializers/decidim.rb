@@ -97,15 +97,15 @@ Decidim.configure do |config|
   # settings. The maps configuration will manage which geocoding service to use,
   # so that does not need any additional configuration here. Use this only for
   # the global geocoder preferences.
-  # config.geocoder = {
-  #   # geocoding service request timeout, in seconds (default 3):
-  #   timeout: 5,
-  #   # set default units to kilometers:
-  #   units: :km,
-  #   # caching (see https://github.com/alexreisner/geocoder#caching for details):
-  #   cache: Redis.new,
-  #   cache_prefix: "..."
-  # }
+  config.geocoder = {
+    # geocoding service request timeout, in seconds (default 3):
+    timeout: 5,
+    # set default units to kilometers:
+    units: :km
+    # caching (see https://github.com/alexreisner/geocoder#caching for details):
+    # cache: Redis.new,
+    # cache_prefix: "..."
+  }
   if Rails.application.secrets.maps.present? && Rails.application.secrets.maps[:static_provider].present?
     static_provider = Rails.application.secrets.maps[:static_provider]
     dynamic_provider = Rails.application.secrets.maps[:dynamic_provider]
@@ -477,6 +477,9 @@ if Decidim.module_installed? :elections
     config.census_access_codes_export_expiry_time = Rails.application.secrets.dig(:elections, :votings, :census, :access_codes_export_expiry_time).to_i.days
   end
 end
+
+# Inform Decidim about the assets folder
+Decidim.register_assets_path File.expand_path("app/packs", Rails.application.root)
 
 Rails.application.config.i18n.available_locales = Decidim.available_locales
 Rails.application.config.i18n.default_locale = Decidim.default_locale
