@@ -23,7 +23,7 @@ if Rails.application.secrets.aws_access_key_id.present?
       host: "s3.eu-west-1.amazonaws.com"
       # endpoint:              'https://s3.example.com:8080'
     }
-    config.fog_directory = ENV.fetch("AWS_BUCKET_NAME", "decidim-uclg")
+    config.fog_directory = ENV.fetch("AWS_BUCKET_NAME", "decidim-oidp")
     # config.fog_public     = false
     config.fog_attributes = {
       "Cache-Control" => "max-age=#{365.days.to_i}",

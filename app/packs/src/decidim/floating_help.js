@@ -1,5 +1,3 @@
-//= require decidim
-
 $(function() {
   if (!window.localStorage) {
     return;
