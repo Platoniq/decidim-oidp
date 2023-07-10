@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "active_support/core_ext/integer/time"
+
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -21,7 +23,7 @@ Rails.application.configure do
 
     config.cache_store = :memory_store
     config.public_file_server.headers = {
-      "Cache-Control" => "public, max-age=#{2.days.to_i}"
+      "Cache-Control" => "public, max-age=#{2.days.seconds.to_i}"
     }
   else
     config.action_controller.perform_caching = false
@@ -35,12 +37,19 @@ Rails.application.configure do
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :letter_opener_web
-  config.action_mailer.default_url_options = { port: 3000 }
+  config.action_mailer.default_url_options = { host: "localhost:3000" }
+  config.action_mailer.asset_host = "http://localhost:3000"
 
   config.action_mailer.perform_caching = false
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
+
+  # Raise exceptions for disallowed deprecations.
+  config.active_support.disallowed_deprecation = :raise
+
+  # Tell Active Support which deprecation messages to disallow.
+  config.active_support.disallowed_deprecation_warnings = []
 
   # Raise an error on page load if there are pending migrations.
   config.active_record.migration_error = :page_load
