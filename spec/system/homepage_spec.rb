@@ -2,7 +2,7 @@
 
 require "rails_helper"
 
-describe "Visit the home page", perform_enqueued: true do # rubocop:disable RSpec/DescribeClass
+describe "Visit the home page", perform_enqueued: true do
   let(:organization) { create(:organization) }
 
   before do
