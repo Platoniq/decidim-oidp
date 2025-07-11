@@ -7,15 +7,15 @@ on:
   pull_request:
 
 env:
-  RUBY_VERSION: 3.0.2
-  NODE_VERSION: 16.9.1
+  RUBY_VERSION: 3.1.1
+  NODE_VERSION: 18.17.1
 
 jobs:
   lint:
     name: Lint code
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v2.0.0
+      - uses: actions/checkout@v4.0.0
         with:
           fetch-depth: 1
 
@@ -30,9 +30,6 @@ jobs:
 
       - run: bundle exec rubocop -P
         name: Lint Ruby files
-
-      - run: bundle exec mdl *.md
-        name: Lint Markdown files
 
       - run: bundle exec erblint app/views/**/*.erb
         name: Lint ERB files

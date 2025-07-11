@@ -50,7 +50,7 @@ Capfile
 
 .stuff
 
-.rubocop*
+.rubocop-https*
 
 node_modules
 /public/decidim-packs
@@ -63,3 +63,4 @@ yarn-debug.log*
 
 public/sw.js
 public/sw.js.map
+tailwind.config.js
