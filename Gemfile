@@ -13,6 +13,7 @@ gem "decidim-consultations", DECIDIM_VERSION
 gem "decidim-decidim_awesome", git: "https://github.com/decidim-ice/decidim-module-decidim_awesome", branch: "main"
 gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "master"
 
+gem "appsignal"
 gem "bootsnap", "~> 1.4"
 gem "health_check"
 gem "sentry-rails"
