@@ -90,7 +90,7 @@ GEM
       public_suffix (>= 2.0.2, < 7.0)
     airbrussh (1.4.1)
       sshkit (>= 1.6.1, != 1.7.0)
-    appsignal (4.8.1)
+    appsignal (4.8.2)
       logger
       rack (>= 2.0.0)
     ast (2.4.2)
@@ -644,7 +644,7 @@ GEM
       nio4r (~> 2.0)
     raabro (1.4.0)
     racc (1.8.1)
-    rack (2.2.17)
+    rack (2.2.22)
     rack-attack (6.7.0)
       rack (>= 1.0, < 4)
     rack-cors (1.1.1)
