@@ -12,6 +12,7 @@ gem "decidim-conferences", DECIDIM_VERSION
 gem "decidim-decidim_awesome", git: "https://github.com/decidim-ice/decidim-module-decidim_awesome", branch: "release/0.28-stable"
 gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer", branch: "main"
 
+gem "appsignal"
 gem "bootsnap", "~> 1.4"
 gem "health_check"
 gem "sentry-rails"
