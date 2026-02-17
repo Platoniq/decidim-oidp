@@ -1,11 +1,12 @@
 # frozen_string_literal: true
 
 # This migration comes from decidim_comments (originally 20181019092928)
-
+# This file has been modified by `decidim upgrade:migrations` task on 2026-02-17 08:03:05 UTC
 class MakeAuthorPolymorphicForCommentVotes < ActiveRecord::Migration[5.2]
   class CommentVote < ApplicationRecord
     self.table_name = :decidim_comments_comment_votes
   end
+
   def change
     add_column :decidim_comments_comment_votes, :decidim_author_type, :string
 
@@ -19,8 +20,8 @@ class MakeAuthorPolymorphicForCommentVotes < ActiveRecord::Migration[5.2]
     end
 
     add_index :decidim_comments_comment_votes,
-              %i[decidim_author_id decidim_author_type],
-              name: 'index_decidim_comments_comment_votes_on_decidim_author'
+              [:decidim_author_id, :decidim_author_type],
+              name: "index_decidim_comments_comment_votes_on_decidim_author"
 
     change_column_null :decidim_comments_comment_votes, :decidim_author_id, false
     change_column_null :decidim_comments_comment_votes, :decidim_author_type, false

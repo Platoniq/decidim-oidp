@@ -1,12 +1,13 @@
-# This migration comes from decidim_assemblies (originally 20180226103942)
 # frozen_string_literal: true
 
+# This migration comes from decidim_assemblies (originally 20180226103942)
+# This file has been modified by `decidim upgrade:migrations` task on 2026-02-17 08:03:05 UTC
 class AddParentChildRelationToAssemblies < ActiveRecord::Migration[5.1]
   def change
-    unless extension_enabled?('ltree')
+    unless extension_enabled?("ltree")
       begin
         # required so that test suite works in ci env
-        enable_extension 'ltree'
+        enable_extension "ltree"
       rescue StandardError
         raise <<-MSG.squish
         Decidim requires the ltree extension to be enabled in your PostgreSQL.

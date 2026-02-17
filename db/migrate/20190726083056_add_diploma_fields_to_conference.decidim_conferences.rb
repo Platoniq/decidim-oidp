@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # This migration comes from decidim_conferences (originally 20181106092826)
-
+# This file has been modified by `decidim upgrade:migrations` task on 2026-02-17 08:03:05 UTC
 class AddDiplomaFieldsToConference < ActiveRecord::Migration[5.2]
   def change
     add_column :decidim_conferences, :signature_name, :string
