@@ -52,7 +52,7 @@ jobs:
           chrome-version: 119.0.6045.105
 
       - run: |
-          sudo apt install imagemagick 
+          sudo apt update && sudo apt install imagemagick 
 
       - name: Bundle Install
         run: bundle install
