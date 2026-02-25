@@ -31,7 +31,7 @@ Decidim.configure do |config|
   config.force_ssl = force_ssl.present? unless force_ssl == "auto"
 
   # Enable the service worker. By default is disabled in development and enabled in the rest of environments
-  config.service_worker_enabled = Decidim::Env.new("DECIDIM_SERVICE_WORKER_ENABLED").to_boolean_string
+  config.service_worker_enabled = Decidim::Env.new("DECIDIM_SERVICE_WORKER_ENABLED").present?
 
   # Storage provider and CDN host (new in 0.31)
   config.storage_provider = Decidim::Env.new("STORAGE_PROVIDER").to_s if Decidim::Env.new("STORAGE_PROVIDER").present?
@@ -147,7 +147,7 @@ Decidim.configure do |config|
   config.currency_unit = Decidim::Env.new("DECIDIM_CURRENCY_UNIT").to_s if Decidim::Env.new("DECIDIM_CURRENCY_UNIT").present?
 
   # Workaround to enable SVG assets cors
-  config.cors_enabled = Decidim::Env.new("DECIDIM_CORS_ENABLED").to_boolean_string
+  config.cors_enabled = Decidim::Env.new("DECIDIM_CORS_ENABLED").present?
 
   # Defines the quality of image uploads after processing. Image uploads are
   # processed by Decidim, this value helps reduce the size of the files.
@@ -172,7 +172,7 @@ Decidim.configure do |config|
   # that an organization's administrator injects malicious scripts to spy on or
   # take over user accounts.
   #
-  config.enable_html_header_snippets = Decidim::Env.new("DECIDIM_ENABLE_HTML_HEADER_SNIPPETS").to_boolean_string
+  config.enable_html_header_snippets = Decidim::Env.new("DECIDIM_ENABLE_HTML_HEADER_SNIPPETS").present?
 
   # Allow organizations admins to track newsletter links.
   track_newsletter_links = Decidim::Env.new("DECIDIM_TRACK_NEWSLETTER_LINKS", "auto").default_or_present_if_exists.to_s
@@ -301,7 +301,7 @@ Decidim.configure do |config|
   config.consent_cookie_name = Decidim::Env.new("DECIDIM_CONSENT_COOKIE_NAME").to_s if Decidim::Env.new("DECIDIM_CONSENT_COOKIE_NAME").present?
 
   # Admin password configurations
-  config.admin_password_strong = Decidim::Env.new("DECIDIM_ADMIN_PASSWORD_STRONG").to_boolean_string if Decidim::Env.new("DECIDIM_ADMIN_PASSWORD_STRONG").present?
+  config.admin_password_strong = Decidim::Env.new("DECIDIM_ADMIN_PASSWORD_STRONG").present? if Decidim::Env.new("DECIDIM_ADMIN_PASSWORD_STRONG").present?
   config.admin_password_expiration_days = Decidim::Env.new("DECIDIM_ADMIN_PASSWORD_EXPIRATION_DAYS").to_i if Decidim::Env.new("DECIDIM_ADMIN_PASSWORD_EXPIRATION_DAYS").present?
   config.admin_password_min_length = Decidim::Env.new("DECIDIM_ADMIN_PASSWORD_MIN_LENGTH").to_i if Decidim::Env.new("DECIDIM_ADMIN_PASSWORD_MIN_LENGTH").present?
   config.admin_password_repetition_times = Decidim::Env.new("DECIDIM_ADMIN_PASSWORD_REPETITION_TIMES").to_i if Decidim::Env.new("DECIDIM_ADMIN_PASSWORD_REPETITION_TIMES").present?
@@ -312,13 +312,13 @@ Decidim.configure do |config|
   enable_remember_me = Decidim::Env.new("DECIDIM_ENABLE_REMEMBER_ME", "auto").default_or_present_if_exists.to_s
   config.enable_remember_me = enable_remember_me.present? unless enable_remember_me == "auto"
   config.session_timeout_interval = Decidim::Env.new("DECIDIM_SESSION_TIMEOUT_INTERVAL").to_i.seconds if Decidim::Env.new("DECIDIM_SESSION_TIMEOUT_INTERVAL").present?
-  config.follow_http_x_forwarded_host = Decidim::Env.new("DECIDIM_FOLLOW_HTTP_X_FORWARDED_HOST").to_boolean_string
+  config.follow_http_x_forwarded_host = Decidim::Env.new("DECIDIM_FOLLOW_HTTP_X_FORWARDED_HOST").present?
   if Decidim::Env.new("DECIDIM_MAXIMUM_CONVERSATION_MESSAGE_LENGTH").present?
     config.maximum_conversation_message_length = Decidim::Env.new("DECIDIM_MAXIMUM_CONVERSATION_MESSAGE_LENGTH").to_i
   end
   denied_passwords = Decidim::Env.new("DECIDIM_PASSWORD_BLACKLIST").to_array(separator: ", ")
   config.denied_passwords = denied_passwords if denied_passwords.present?
-  config.allow_open_redirects = Decidim::Env.new("DECIDIM_ALLOW_OPEN_REDIRECTS").to_boolean_string
+  config.allow_open_redirects = Decidim::Env.new("DECIDIM_ALLOW_OPEN_REDIRECTS").present?
 end
 
 if Decidim.module_installed? :api
@@ -386,7 +386,7 @@ if Decidim.module_installed? :initiatives
     end
     print_enabled = Decidim::Env.new("INITIATIVES_PRINT_ENABLED", "auto").default_or_present_if_exists.to_s
     config.print_enabled = print_enabled.present? unless print_enabled == "auto"
-    config.do_not_require_authorization = Decidim::Env.new("INITIATIVES_DO_NOT_REQUIRE_AUTHORIZATION").to_boolean_string
+    config.do_not_require_authorization = Decidim::Env.new("INITIATIVES_DO_NOT_REQUIRE_AUTHORIZATION").present?
   end
 end
 
