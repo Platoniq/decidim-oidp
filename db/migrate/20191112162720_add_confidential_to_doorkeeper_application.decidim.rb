@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # This migration comes from decidim (originally 20190618075906)
-
+# This file has been modified by `decidim upgrade:migrations` task on 2026-02-17 08:03:06 UTC
 class AddConfidentialToDoorkeeperApplication < ActiveRecord::Migration[5.2]
   def change
     add_column(

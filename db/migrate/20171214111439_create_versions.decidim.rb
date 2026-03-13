@@ -1,6 +1,7 @@
-# This migration comes from decidim (originally 20171107103253)
 # frozen_string_literal: true
 
+# This migration comes from decidim (originally 20171107103253)
+# This file has been modified by `decidim upgrade:migrations` task on 2026-02-17 08:03:06 UTC
 # This migration creates the `versions` table, the only schema PT requires.
 # All other migrations PT provides are optional.
 class CreateVersions < ActiveRecord::Migration[5.1]
@@ -14,6 +15,6 @@ class CreateVersions < ActiveRecord::Migration[5.1]
 
       t.datetime :created_at
     end
-    add_index :versions, %i[item_type item_id]
+    add_index :versions, [:item_type, :item_id]
   end
 end

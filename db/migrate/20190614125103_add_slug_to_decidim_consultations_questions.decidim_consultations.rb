@@ -1,6 +1,5 @@
-# frozen_string_literal: true
-
 # This migration comes from decidim_consultations (originally 20180115170933)
+# frozen_string_literal: true
 
 class AddSlugToDecidimConsultationsQuestions < ActiveRecord::Migration[5.1]
   class Question < ApplicationRecord
@@ -27,8 +26,8 @@ class AddSlugToDecidimConsultationsQuestions < ActiveRecord::Migration[5.1]
     change_column_null :decidim_consultations_questions, :slug, false
 
     add_index :decidim_consultations_questions,
-              %i[decidim_organization_id slug],
-              name: 'index_unique_question_slug_and_organization',
+              [:decidim_organization_id, :slug],
+              name: "index_unique_question_slug_and_organization",
               unique: true
   end
 end

@@ -1,6 +1,7 @@
-# This migration comes from decidim_assemblies (originally 20180109105917)
 # frozen_string_literal: true
 
+# This migration comes from decidim_assemblies (originally 20180109105917)
+# This file has been modified by `decidim upgrade:migrations` task on 2026-02-17 08:03:05 UTC
 class AddAssemblyUserRoles < ActiveRecord::Migration[5.1]
   def change
     create_table :decidim_assembly_user_roles do |t|
@@ -11,8 +12,8 @@ class AddAssemblyUserRoles < ActiveRecord::Migration[5.1]
     end
 
     add_index :decidim_assembly_user_roles,
-              %i[decidim_assembly_id decidim_user_id role],
+              [:decidim_assembly_id, :decidim_user_id, :role],
               unique: true,
-              name: 'index_unique_user_and_assembly_role'
+              name: "index_unique_user_and_assembly_role"
   end
 end
