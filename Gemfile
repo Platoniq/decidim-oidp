@@ -4,9 +4,9 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-DECIDIM_VERSION = "0.31.2"
+DECIDIM_VERSION = { git: "https://github.com/decidim/decidim", branch: "release/0.31-stable" }.freeze
 
-gem "decidim", git: "https://github.com/decidim/decidim", branch: "release/0.31-stable"
+gem "decidim", DECIDIM_VERSION
 # gem "decidim-initiatives", DECIDIM_VERSION
 gem "decidim-conferences", DECIDIM_VERSION
 gem "decidim-decidim_awesome", git: "https://github.com/decidim-ice/decidim-module-decidim_awesome", branch: "release/0.31-stable"
