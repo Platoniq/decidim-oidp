@@ -24,6 +24,7 @@ gem "sidekiq-cron"
 gem "i18n", "~> 1.8.1"
 
 gem "puma", ">= 5.0.0"
+gem "rack-attack", "~> 6.7"
 gem "uglifier", "~> 4.1"
 
 gem "faker"
