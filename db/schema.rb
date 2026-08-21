@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2026_02_17_113522) do
+ActiveRecord::Schema[7.2].define(version: 2026_08_21_064030) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
   enable_extension "pg_trgm"
@@ -419,7 +419,7 @@ ActiveRecord::Schema[7.2].define(version: 2026_02_17_113522) do
     t.jsonb "title"
     t.integer "weight", default: 0, null: false
     t.jsonb "description"
-    t.integer "total_budget", default: 0
+    t.bigint "total_budget", default: 0
     t.integer "decidim_component_id"
     t.datetime "created_at", precision: nil, null: false
     t.datetime "updated_at", precision: nil, null: false
