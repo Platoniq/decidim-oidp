@@ -111,5 +111,8 @@ Rails.application.configure do
   # config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
 
   # Specify redis cache store
-  config.cache_store = :redis_cache_store, { url: ENV.fetch("REDIS_URL", nil) }
+  config.cache_store = :redis_cache_store, {
+    url: ENV.fetch("REDIS_CACHE_URL", "redis://localhost:6379/2"),
+    expires_in: 1.day
+  }
 end
